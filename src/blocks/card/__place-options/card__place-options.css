@@ -1,0 +1,11 @@
+.card__place-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  /* display: grid; */
+  /* justify-content: end; */
+  /* grid-template-columns: 224px 22px; */
+  margin: 22px 15px 22px 21px;
+  /* gap: 0; */
+}

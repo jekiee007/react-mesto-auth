@@ -1,0 +1,18 @@
+.header {
+  max-width: 880px;
+  padding: 45px 0 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(84, 84, 84, 0.7);
+}
+
+@media screen and (max-width: 597px) {
+  .header {
+    position: relative;
+    z-index: -1;
+    width: 320px;
+    padding: 28px 0 0;
+    left: calc((282px - 320px) / 2);
+  }
+}

@@ -1,0 +1,28 @@
+.profile__info {
+  display: grid;
+  max-width: 570px;
+  max-height: 73px;
+  grid-template-columns: 294px 24px;
+  grid-template-rows: 39px 18px;
+  gap: 16px 18px;
+  margin: auto auto auto 30px;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 896px) {
+  .profile__info {
+    margin: auto;
+    max-width: 294px;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .profile__info {
+    max-width: 189px;
+    max-height: 54px;
+    grid-template-columns: 189px 18px;
+    grid-template-rows: 26px 14px;
+    gap: 14px 10px;
+    margin: 26px auto 0;
+  }
+}
