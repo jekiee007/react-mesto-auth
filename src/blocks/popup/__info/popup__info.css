@@ -1,0 +1,18 @@
+.popup__info {
+    max-width: 244px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.21;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: black;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 597px) {
+    .popup__info {
+        width: 238px;
+        margin-bottom: 50px;
+    }
+}

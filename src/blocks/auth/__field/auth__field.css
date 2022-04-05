@@ -1,0 +1,23 @@
+.auth__field {
+  display: flex;
+  width: 358px;
+  margin: 0 auto;
+  padding: 0;
+  border: unset;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.4);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.auth__field::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+@media screen and (max-width: 597px) {
+  .auth__field {
+    width: 260px;
+  }
+}

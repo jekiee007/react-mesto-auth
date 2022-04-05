@@ -1,0 +1,24 @@
+.auth__input {
+    display: flex;
+    flex-direction: column;
+    height: 27px;
+    width: 358px;
+    border: unset;
+    background-color: #000;
+    border-bottom: 2px solid #ccc;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .auth__input::placeholder {
+    color: #ccc;
+    /* opacity: 1; */
+  }
+
+  @media screen and (max-width: 597px) {
+    .auth__input {
+      width: 238px;
+    }
+  }
