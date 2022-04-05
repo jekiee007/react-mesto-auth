@@ -28,6 +28,7 @@ function Login({ handleLogin }) {
         className="auth__form"
         name="login"
         onSubmit={handleSubmit}
+
         noValidate
       >
         <input
