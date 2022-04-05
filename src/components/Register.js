@@ -27,13 +27,12 @@ function Register({ handleRegister }) {
       <h2 className="auth__title">Регистрация</h2>
       <form
         className="auth__form"
-        name="login"
+        name="register"
         onSubmit={handleSubmit}
         noValidate
       >
         <input
           className="auth__input auth__input_type_email"
-          onSubmit={handleSubmit}
           onChange={handleChange}
           value={email}
           name="email"
@@ -63,7 +62,7 @@ function Register({ handleRegister }) {
           Зарегистрироваться
         </button>
       </form>
-    
+
       <p className="auth__login-tip">
         Уже зарегистрированы?{" "}
         <Link to={`./sign-in`} className="auth__login-link">

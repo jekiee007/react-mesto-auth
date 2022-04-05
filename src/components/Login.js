@@ -5,6 +5,7 @@ function Login({ handleLogin }) {
     email: "",
     password: "",
   });
+
   const { email, password } = data;
 
   function handleChange(e) {
@@ -28,12 +29,11 @@ function Login({ handleLogin }) {
         className="auth__form"
         name="login"
         onSubmit={handleSubmit}
-
         noValidate
       >
         <input
           className="auth__input auth__input_type_email"
-          onSubmit={handleChange}
+          onChange={handleChange}
           value={email}
           name="email"
           type="email"
@@ -57,7 +57,7 @@ function Login({ handleLogin }) {
           className="auth__button popup__button_reg"
           type="submit"
           name="submit"
-          value="Зарегистрироваться"
+          value="Войти"
         >
           Войти
         </button>
