@@ -1,0 +1,14 @@
+.auth__login {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.auth__login:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
