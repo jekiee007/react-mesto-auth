@@ -21,8 +21,8 @@ export default function InfoToolTip(props) {
           />
           <h2 className="popup__info_title">
             {props.isSuccess
-              ? props.onSuccessRegMessage
-              : props.onFailRegMessage}
+              ? props.successMessage
+              : props.failMessage}
           </h2>
         </div>
       </div>
