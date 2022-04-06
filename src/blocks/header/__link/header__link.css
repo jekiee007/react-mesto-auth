@@ -6,7 +6,7 @@
     text-decoration: none;
   }
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 597px) {
     .header__link {
       font-size: 18px;
       line-height: 1.22;

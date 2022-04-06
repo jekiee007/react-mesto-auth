@@ -5,7 +5,7 @@
     justify-content: center;
   }
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 597px) {
     .header__nav {
       flex-direction: row;
       align-items: center;

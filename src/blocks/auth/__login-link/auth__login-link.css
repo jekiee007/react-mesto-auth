@@ -4,7 +4,7 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 597px) {
   .auth__login-link {
     transition: opacity .4s;
   }

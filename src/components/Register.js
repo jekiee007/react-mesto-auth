@@ -63,7 +63,7 @@ function Register({ handleRegister }) {
         </button>
       </form>
 
-      <p className="auth__login-tip">
+      <p className="auth__paragraph">
         Уже зарегистрированы?{" "}
         <Link to={`./sign-in`} className="auth__login-link">
           Войти
