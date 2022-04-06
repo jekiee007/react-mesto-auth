@@ -65,8 +65,8 @@ function App() {
     }
   }, [isLoggedIn]);
 
-  React.useEffect(
-    () =>
+  React.useEffect(() => {
+    if (isLoggedIn) {
       Promise.all([api.getProfileInfo(), api.getCards()])
         .then(([data, cards]) => {
           setCurrentUser(data);
@@ -74,9 +74,9 @@ function App() {
         })
         .catch((err) => {
           console.log(err);
-        }),
-    []
-  );
+        });
+    }
+  }, [isLoggedIn]);
 
   const handleCardLike = (card) => {
     const isLiked = card.likes.some((i) => i._id !== currentUser._id);
@@ -219,7 +219,7 @@ function App() {
 
           <Footer />
         </div>
-        
+
         <AddPlacePopup
           isOpen={isAddPlacePopupOpen}
           onClose={closeAllPopups}
