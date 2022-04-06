@@ -1,0 +1,15 @@
+.header__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
+  
+  @media screen and (min-width: 597px) {
+    .header__list {
+      flex-direction: row;
+      align-items: center;
+    }
+  }

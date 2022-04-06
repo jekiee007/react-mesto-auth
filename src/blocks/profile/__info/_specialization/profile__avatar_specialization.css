@@ -1,0 +1,39 @@
+.profile__avatar_specialization {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 570px;
+  color: #fff;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-self: center;
+}
+
+@media screen and (max-width: 896px) {
+  .profile__avatar_specialization {
+    margin: auto;
+    align-self: center;
+    max-width: 294px;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .profile__avatar_specialization {
+    max-width: 221px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,15 @@
+.header__list_item {
+    padding: 0;
+    list-style: none;
+    
+  }
+  
+  @media screen and (max-width: 597px) {
+    .header__list_item {
+      margin: 0 auto;
+      max-width: 880px;
+      padding: 0 21px 0 0;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }

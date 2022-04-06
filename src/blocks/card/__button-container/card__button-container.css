@@ -1,0 +1,7 @@
+.card__button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35px;
+  width: 22px;
+}

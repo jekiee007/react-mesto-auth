@@ -1,0 +1,27 @@
+.popup__input {
+    display: flex;
+    flex-direction: column;
+    height: 27px;
+    width: 358px;
+    border: unset;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .popup__input::placeholder {
+    color: #000;
+    opacity: 1;
+  }
+
+  .popup__input:nth-child(n + 2){
+    margin: 30px auto 0;
+  }
+  
+  @media screen and (max-width: 597px) {
+    .popup__input {
+      width: 238px;
+    }
+  }

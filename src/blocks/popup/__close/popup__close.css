@@ -1,0 +1,34 @@
+.popup__close {
+  position: absolute;
+  background-color: transparent;
+  border: unset;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("../../../images/button__add-place.svg");
+  width: 44px;
+  height: 44px;
+  top: -42px;
+  right: -42px;
+  transform: rotate(45deg);
+  transition: opacity 0.3s ease;
+  transition: 0.5s ease;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
+  transform: rotate(225deg);
+  cursor: pointer;
+}
+
+.popup__close:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 597px) {
+  .popup__close {
+    width: 26px;
+    height: 26px;
+    right: 0;
+    top: -41px;
+  }
+}
