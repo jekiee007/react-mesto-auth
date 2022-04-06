@@ -1,5 +1,6 @@
 .footer {
-  margin: 67px auto 60px;
+  margin: 67px auto 0;
+  padding-bottom: 42px;
   color: #545454;
   font-style: normal;
   font-weight: normal;
