@@ -28,7 +28,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const [isInfoTooltipOpen, setIsInfoTooltipOpen] = React.useState(false);
   const [isRegistrationSuccessful, setIsRegistrationSuccessful] =
-    React.useState();
+    React.useState(null);
   const [userEmail, setUserEmail] = React.useState("");
 
   const handleEditAvatarClick = () => {
