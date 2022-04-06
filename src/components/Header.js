@@ -1,7 +1,6 @@
 import React from "react";
 import logoMesto from "../images/logo__mesto.svg";
-import { Link, Route } from "react-router-dom";
-import { Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 
 export default function Header(props) {
   return (
