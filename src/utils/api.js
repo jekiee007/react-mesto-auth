@@ -60,9 +60,9 @@ class Api {
     }).then(this._handleResponse);
   }
 
-  changeLikeCardStatus(data, isLiked){
+  changeLikeCardStatus(data, isLiked) {
     return fetch(`${this._url}/cards/${data}/likes`, {
-      method: isLiked ? 'PUT' : 'DELETE',
+      method: isLiked ? "PUT" : "DELETE",
       headers: this._headers,
     }).then(this._handleResponse);
   }
@@ -87,7 +87,7 @@ export const api = new Api({
 });
 
 export const authApi = new Api({
-  url: 'https://auth.nomoreparties.co',
-  headers: `Bearer ${localStorage.getItem('token')}`,
+  url: "https://auth.nomoreparties.co",
+  headers: `Bearer ${localStorage.getItem("token")}`,
   "Content-Type": "application/json",
 });

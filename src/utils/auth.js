@@ -37,13 +37,13 @@ export const authorize = (email, password) => {
   }).then(checkResponse);
 };
 
-export const getContent = (token) => {
+export const getContent = (headers) => {
   return fetch(`${BASE_URL}/users/me`, {
     method: "GET",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${headers}`,
     },
   })
     .then((res) => res.json())
