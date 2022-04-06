@@ -7,9 +7,9 @@ export default function Header(props) {
     <header className="header">
       <img src={logoMesto} alt="Лого место" className="header__logo" />
       <Route exact path="/">
-        <ul className="header__nav">
-          <li className="header__nav_item">{props.userEmail}</li>
-          <li className="header__nav_item">
+        <ul className="header__list">
+          <li className="header__list_item">{props.userEmail}</li>
+          <li className="header__list_item">
             <button
               onClick={props.signOut}
               className="header__link header__button_sign-out"

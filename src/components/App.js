@@ -16,6 +16,8 @@ import Register from "./Register";
 import Login from "./Login";
 
 function App() {
+  const history = useHistory();
+
   const [isEditProfilePopupOpen, setEditProfilePopupOpen] =
     React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOped] = React.useState(false);
@@ -23,9 +25,7 @@ function App() {
   const [selectedCard, setSelectedCard] = React.useState(null);
   const [currentUser, setCurrentUser] = React.useState({});
   const [cards, setCards] = React.useState([]);
-
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
-  const history = useHistory();
   const [isInfoTooltipOpen, setIsInfoTooltipOpen] = React.useState(false);
   const [isRegistrationSuccessful, setIsRegistrationSuccessful] =
     React.useState();
@@ -218,32 +218,32 @@ function App() {
           </Switch>
 
           <Footer />
-
-          <AddPlacePopup
-            isOpen={isAddPlacePopupOpen}
-            onClose={closeAllPopups}
-            onAddPlace={handleAddPlaceSubmit}
-          ></AddPlacePopup>
-
-          <EditAvatarPopup
-            isOpen={isEditAvatarPopupOpen}
-            onClose={closeAllPopups}
-            onUpdateAvatar={handleUpdateAvatar}
-          ></EditAvatarPopup>
-
-          <EditProfilePopup
-            isOpen={isEditProfilePopupOpen}
-            onClose={closeAllPopups}
-            onUpdateUser={handleUpdateUser}
-          ></EditProfilePopup>
         </div>
+        
+        <AddPlacePopup
+          isOpen={isAddPlacePopupOpen}
+          onClose={closeAllPopups}
+          onAddPlace={handleAddPlaceSubmit}
+        ></AddPlacePopup>
+
+        <EditAvatarPopup
+          isOpen={isEditAvatarPopupOpen}
+          onClose={closeAllPopups}
+          onUpdateAvatar={handleUpdateAvatar}
+        ></EditAvatarPopup>
+
+        <EditProfilePopup
+          isOpen={isEditProfilePopupOpen}
+          onClose={closeAllPopups}
+          onUpdateUser={handleUpdateUser}
+        ></EditProfilePopup>
 
         <InfoTooltip
           isOpen={isInfoTooltipOpen}
           isSuccess={isRegistrationSuccessful}
           onClose={closeAllPopups}
-          successMessage={"Вы успешно зарегистрировались!"}
-          failMessage={"Что-то пошло не так! Попробуйте ещё раз."}
+          messageSuccess={"Вы успешно зарегистрировались!"}
+          messageFail={"Что-то пошло не так! Попробуйте ещё раз."}
         />
 
         <ImagePopup onClose={closeAllPopups} card={selectedCard} />
