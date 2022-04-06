@@ -4,7 +4,7 @@ import registrationFailImage from "../images/registration__fail.svg";
 
 export default function InfoToolTip(props) {
   return (
-    <div className={`popup ${props.isOpen && "popup_opened"}`}>
+    <div className={`popup ${props.isOpen ? "popup_opened" : ""}`}>
       <div className="popup__reg">
         <button
           className="popup__close"

@@ -219,14 +219,6 @@ function App() {
 
           <Footer />
 
-          <InfoTooltip
-            isOpen={isInfoTooltipOpen}
-            successResult={isRegistrationSuccessful}
-            onClose={closeAllPopups}
-            successMessage={"Вы успешно зарегистрировались!"}
-            failMessage={"Что-то пошло не так! Попробуйте ещё раз."}
-          />
-
           <AddPlacePopup
             isOpen={isAddPlacePopupOpen}
             onClose={closeAllPopups}
@@ -245,7 +237,13 @@ function App() {
             onUpdateUser={handleUpdateUser}
           ></EditProfilePopup>
         </div>
-
+        <InfoTooltip
+          isOpen={isInfoTooltipOpen}
+          successResult={isRegistrationSuccessful}
+          onClose={closeAllPopups}
+          successMessage={"Вы успешно зарегистрировались!"}
+          failMessage={"Что-то пошло не так! Попробуйте ещё раз."}
+        />
         <ImagePopup onClose={closeAllPopups} card={selectedCard} />
       </div>
     </CurrentUserContext.Provider>

@@ -46,7 +46,7 @@ function Register({ handleRegister }) {
           className="auth__input auth__input_type_password"
           onChange={handleChange}
           value={password}
-          name="popupTypeURL"
+          name="password"
           type="password"
           id="password"
           placeholder="Пароль"
