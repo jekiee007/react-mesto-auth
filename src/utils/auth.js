@@ -4,13 +4,6 @@ const checkResponse = (res) => {
   if (res.ok) {
     return res.json();
   }
-  // return res.json().then((data) => {
-  //   const { statusCode } = data;
-  //   const { message } = data.message[0].message[0];
-  //   const error = new Error(message || "Что-то пошло не так");
-  //   error.status = statusCode;
-  //   throw error;
-  // });
   return Promise.reject(`Error: ${res.status}`);
 };
 
